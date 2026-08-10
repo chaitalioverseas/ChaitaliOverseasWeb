@@ -720,3 +720,48 @@
         transform: scale(1);
     }
 }
+
+/* Fixed WhatsApp Button - Left Side */
+.whatsapp-float {
+    position: fixed;
+    left: 20px;
+    bottom: 25px;
+    z-index: 9999;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float i {
+    font-size: 58px;
+    color: #25D366;
+    line-height: 1;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+    .whatsapp-float {
+        left: 15px;
+        bottom: 20px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .whatsapp-float i {
+        font-size: 52px;
+    }
+}
